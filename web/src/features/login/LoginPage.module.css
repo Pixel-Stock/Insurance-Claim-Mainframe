@@ -1,0 +1,90 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-navy-900) 0%, var(--color-navy-700) 100%);
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--color-white);
+  border-radius: 8px;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+.header {
+  padding: var(--space-2xl);
+  text-align: center;
+  background: var(--color-navy-900);
+  color: var(--color-white);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+}
+
+.subtitle {
+  font-size: 14px;
+  color: var(--color-slate-300);
+}
+
+.form {
+  padding: var(--space-2xl);
+}
+
+.field {
+  margin-bottom: var(--space-lg);
+}
+
+.label {
+  display: block;
+  margin-bottom: var(--space-sm);
+  font-weight: 500;
+  color: var(--color-slate-700);
+}
+
+.select {
+  width: 100%;
+  padding: var(--space-md);
+  border: 1px solid var(--color-slate-300);
+  border-radius: 4px;
+  font-size: 14px;
+  background: var(--color-white);
+}
+
+.button {
+  width: 100%;
+  padding: var(--space-md);
+  background: var(--color-navy-700);
+  color: var(--color-white);
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.button:hover:not(:disabled) {
+  background: var(--color-navy-600);
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.footer {
+  padding: var(--space-lg);
+  text-align: center;
+  font-size: 12px;
+  color: var(--color-slate-500);
+  background: var(--color-slate-50);
+  border-top: 1px solid var(--color-slate-200);
+}
+
+.roleDescription { margin-top: var(--space-sm); color: var(--color-slate-600); font-size: 13px; }

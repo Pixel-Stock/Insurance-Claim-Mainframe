@@ -1,0 +1,46 @@
+.header {
+  height: var(--header-height);
+  background: var(--color-white);
+  border-bottom: 1px solid var(--color-slate-200);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-xl);
+}
+
+.backend {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.backendLabel {
+  font-size: 12px;
+  color: var(--color-slate-600);
+  font-weight: 500;
+}
+
+.backendValue {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-navy-700);
+  background: var(--color-slate-100);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: 3px;
+}
+
+.logoutBtn {
+  padding: var(--space-sm) var(--space-lg);
+  border: 1px solid var(--color-slate-300);
+  background: var(--color-white);
+  color: var(--color-slate-700);
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.logoutBtn:hover {
+  background: var(--color-slate-50);
+  border-color: var(--color-slate-400);
+}

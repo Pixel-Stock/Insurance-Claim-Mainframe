@@ -1,0 +1,96 @@
+:root {
+  /* Colors - Navy primary, warm off-white background */
+  --color-navy-900: #0f1c3f;
+  --color-navy-800: #1a2b52;
+  --color-navy-700: #263a66;
+  --color-navy-600: #344d7a;
+  --color-navy-500: #4361a6;
+  
+  --color-slate-900: #1e293b;
+  --color-slate-700: #334155;
+  --color-slate-600: #475569;
+  --color-slate-500: #64748b;
+  --color-slate-400: #94a3b8;
+  --color-slate-300: #cbd5e1;
+  --color-slate-200: #e2e8f0;
+  --color-slate-100: #f1f5f9;
+  
+  --color-warm-50: #fafaf9;
+  --color-warm-100: #f5f5f4;
+  --color-white: #ffffff;
+  
+  /* Semantic colors */
+  --color-success: #059669;
+  --color-warning: #d97706;
+  --color-error: #dc2626;
+  --color-info: #2563eb;
+  
+  /* Disposition colors */
+  --color-passed: #10b981;
+  --color-manual: #f59e0b;
+  --color-critical: #ef4444;
+  --color-rejected: #7c3aed;
+  
+  /* Typography */
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  --font-mono: 'SF Mono', 'Consolas', 'Monaco', 'Liberation Mono', monospace;
+  
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  
+  /* Layout */
+  --sidebar-width: 240px;
+  --header-height: 64px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-slate-900);
+  background: var(--color-warm-50);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code, pre {
+  font-family: var(--font-mono);
+}
+
+/* Tabular numbers for amounts and counts */
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Utility classes */
+.mono {
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}

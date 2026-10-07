@@ -1,0 +1,452 @@
+{
+  "CL0000009926": {
+    "rules": [
+      "R001"
+    ],
+    "description": "Blank primary diagnosis"
+  },
+  "CL0000009927": {
+    "rules": [
+      "R001"
+    ],
+    "description": "Blank primary diagnosis"
+  },
+  "CL0000009928": {
+    "rules": [
+      "R001"
+    ],
+    "description": "Blank primary diagnosis"
+  },
+  "CL0000009929": {
+    "rules": [
+      "R001"
+    ],
+    "description": "Blank primary diagnosis"
+  },
+  "CL0000009930": {
+    "rules": [
+      "R001"
+    ],
+    "description": "Blank primary diagnosis"
+  },
+  "CL0000009931": {
+    "rules": [
+      "R002"
+    ],
+    "description": "Invalid service date"
+  },
+  "CL0000009932": {
+    "rules": [
+      "R002"
+    ],
+    "description": "Invalid service date"
+  },
+  "CL0000009933": {
+    "rules": [
+      "R002"
+    ],
+    "description": "Invalid service date"
+  },
+  "CL0000009934": {
+    "rules": [
+      "R002"
+    ],
+    "description": "Invalid service date"
+  },
+  "CL0000009935": {
+    "rules": [
+      "R002"
+    ],
+    "description": "Invalid service date"
+  },
+  "CL0000009936": {
+    "rules": [
+      "R003"
+    ],
+    "description": "Invalid diagnosis format"
+  },
+  "CL0000009937": {
+    "rules": [
+      "R003"
+    ],
+    "description": "Invalid diagnosis format"
+  },
+  "CL0000009938": {
+    "rules": [
+      "R003"
+    ],
+    "description": "Invalid diagnosis format"
+  },
+  "CL0000009939": {
+    "rules": [
+      "R003"
+    ],
+    "description": "Invalid diagnosis format"
+  },
+  "CL0000009940": {
+    "rules": [
+      "R003"
+    ],
+    "description": "Invalid diagnosis format"
+  },
+  "CL0000009941": {
+    "rules": [
+      "R004"
+    ],
+    "description": "Invalid procedure format"
+  },
+  "CL0000009942": {
+    "rules": [
+      "R004"
+    ],
+    "description": "Invalid procedure format"
+  },
+  "CL0000009943": {
+    "rules": [
+      "R004"
+    ],
+    "description": "Invalid procedure format"
+  },
+  "CL0000009944": {
+    "rules": [
+      "R004"
+    ],
+    "description": "Invalid procedure format"
+  },
+  "CL0000009945": {
+    "rules": [
+      "R004"
+    ],
+    "description": "Invalid procedure format"
+  },
+  "CL0000009946": {
+    "rules": [
+      "R005"
+    ],
+    "description": "Invalid NPI check digit"
+  },
+  "CL0000009947": {
+    "rules": [
+      "R005"
+    ],
+    "description": "Invalid NPI check digit"
+  },
+  "CL0000009948": {
+    "rules": [
+      "R005"
+    ],
+    "description": "Invalid NPI check digit"
+  },
+  "CL0000009949": {
+    "rules": [
+      "R005"
+    ],
+    "description": "Invalid NPI check digit"
+  },
+  "CL0000009950": {
+    "rules": [
+      "R005"
+    ],
+    "description": "Invalid NPI check digit"
+  },
+  "CL0000009951": {
+    "rules": [
+      "R006"
+    ],
+    "description": "Zero billed amount"
+  },
+  "CL0000009952": {
+    "rules": [
+      "R006"
+    ],
+    "description": "Zero billed amount"
+  },
+  "CL0000009953": {
+    "rules": [
+      "R006"
+    ],
+    "description": "Zero billed amount"
+  },
+  "CL0000009954": {
+    "rules": [
+      "R006"
+    ],
+    "description": "Zero billed amount"
+  },
+  "CL0000009955": {
+    "rules": [
+      "R006"
+    ],
+    "description": "Zero billed amount"
+  },
+  "CL0000009956": {
+    "rules": [
+      "R007"
+    ],
+    "description": "Service date after run date"
+  },
+  "CL0000009957": {
+    "rules": [
+      "R007"
+    ],
+    "description": "Service date after run date"
+  },
+  "CL0000009958": {
+    "rules": [
+      "R007"
+    ],
+    "description": "Service date after run date"
+  },
+  "CL0000009959": {
+    "rules": [
+      "R007"
+    ],
+    "description": "Service date after run date"
+  },
+  "CL0000009960": {
+    "rules": [
+      "R007"
+    ],
+    "description": "Service date after run date"
+  },
+  "CL0000009961": {
+    "rules": [
+      "R010"
+    ],
+    "description": "Policy not found"
+  },
+  "CL0000009962": {
+    "rules": [
+      "R010"
+    ],
+    "description": "Policy not found"
+  },
+  "CL0000009963": {
+    "rules": [
+      "R010"
+    ],
+    "description": "Policy not found"
+  },
+  "CL0000009964": {
+    "rules": [
+      "R010"
+    ],
+    "description": "Policy not found"
+  },
+  "CL0000009965": {
+    "rules": [
+      "R010"
+    ],
+    "description": "Policy not found"
+  },
+  "CL0000009966": {
+    "rules": [
+      "R011"
+    ],
+    "description": "Member not found"
+  },
+  "CL0000009967": {
+    "rules": [
+      "R011"
+    ],
+    "description": "Member not found"
+  },
+  "CL0000009968": {
+    "rules": [
+      "R011"
+    ],
+    "description": "Member not found"
+  },
+  "CL0000009969": {
+    "rules": [
+      "R011"
+    ],
+    "description": "Member not found"
+  },
+  "CL0000009970": {
+    "rules": [
+      "R011"
+    ],
+    "description": "Member not found"
+  },
+  "CL0000009971": {
+    "rules": [
+      "R012"
+    ],
+    "description": "Policy lapsed"
+  },
+  "CL0000009972": {
+    "rules": [
+      "R012"
+    ],
+    "description": "Policy lapsed"
+  },
+  "CL0000009973": {
+    "rules": [
+      "R012"
+    ],
+    "description": "Policy lapsed"
+  },
+  "CL0000009974": {
+    "rules": [
+      "R012"
+    ],
+    "description": "Policy lapsed"
+  },
+  "CL0000009975": {
+    "rules": [
+      "R012"
+    ],
+    "description": "Policy lapsed"
+  },
+  "CL0000009976": {
+    "rules": [
+      "R013"
+    ],
+    "description": "Service before policy effective"
+  },
+  "CL0000009977": {
+    "rules": [
+      "R013"
+    ],
+    "description": "Service before policy effective"
+  },
+  "CL0000009978": {
+    "rules": [
+      "R013"
+    ],
+    "description": "Service before policy effective"
+  },
+  "CL0000009979": {
+    "rules": [
+      "R013"
+    ],
+    "description": "Service before policy effective"
+  },
+  "CL0000009980": {
+    "rules": [
+      "R013"
+    ],
+    "description": "Service before policy effective"
+  },
+  "CL0000009981": {
+    "rules": [
+      "R014"
+    ],
+    "description": "Service after termination"
+  },
+  "CL0000009982": {
+    "rules": [
+      "R014"
+    ],
+    "description": "Service after termination"
+  },
+  "CL0000009983": {
+    "rules": [
+      "R014"
+    ],
+    "description": "Service after termination"
+  },
+  "CL0000009984": {
+    "rules": [
+      "R014"
+    ],
+    "description": "Service after termination"
+  },
+  "CL0000009985": {
+    "rules": [
+      "R014"
+    ],
+    "description": "Service after termination"
+  },
+  "CL0000009986": {
+    "rules": [
+      "R020"
+    ],
+    "description": "Filing limit exceeded"
+  },
+  "CL0000009987": {
+    "rules": [
+      "R020"
+    ],
+    "description": "Filing limit exceeded"
+  },
+  "CL0000009988": {
+    "rules": [
+      "R020"
+    ],
+    "description": "Filing limit exceeded"
+  },
+  "CL0000009989": {
+    "rules": [
+      "R020"
+    ],
+    "description": "Filing limit exceeded"
+  },
+  "CL0000009990": {
+    "rules": [
+      "R020"
+    ],
+    "description": "Filing limit exceeded"
+  },
+  "CL0000009991": {
+    "rules": [
+      "R030"
+    ],
+    "description": "Exceeds remaining sum insured"
+  },
+  "CL0000009992": {
+    "rules": [
+      "R030"
+    ],
+    "description": "Exceeds remaining sum insured"
+  },
+  "CL0000009993": {
+    "rules": [
+      "R030"
+    ],
+    "description": "Exceeds remaining sum insured"
+  },
+  "CL0000009994": {
+    "rules": [
+      "R030"
+    ],
+    "description": "Exceeds remaining sum insured"
+  },
+  "CL0000009995": {
+    "rules": [
+      "R030"
+    ],
+    "description": "Exceeds remaining sum insured"
+  },
+  "CL0000009996": {
+    "rules": [
+      "R050"
+    ],
+    "description": "Exact duplicate in batch"
+  },
+  "CL0000009997": {
+    "rules": [
+      "R050"
+    ],
+    "description": "Exact duplicate in batch"
+  },
+  "CL0000009998": {
+    "rules": [
+      "R050"
+    ],
+    "description": "Exact duplicate in batch"
+  },
+  "CL0000009999": {
+    "rules": [
+      "R050"
+    ],
+    "description": "Exact duplicate in batch"
+  },
+  "CL0000010000": {
+    "rules": [
+      "R050"
+    ],
+    "description": "Exact duplicate in batch"
+  }
+}

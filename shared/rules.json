@@ -1,0 +1,290 @@
+[
+  {
+    "id": "R001",
+    "category": "Record Integrity",
+    "description": "Mandatory field is blank",
+    "class": "H",
+    "weight": 100,
+    "carc": "16",
+    "explanation": "Claim ID, policy number, member ID, provider ID, service dates, submit date, primary diagnosis, procedure code, or billed amount is missing"
+  },
+  {
+    "id": "R002",
+    "category": "Record Integrity",
+    "description": "Invalid date format",
+    "class": "H",
+    "weight": 100,
+    "carc": "16",
+    "explanation": "Date is non-numeric or not a valid calendar date"
+  },
+  {
+    "id": "R003",
+    "category": "Record Integrity",
+    "description": "Invalid diagnosis code format",
+    "class": "H",
+    "weight": 100,
+    "carc": "16",
+    "explanation": "Diagnosis code is not ICD-10-CM shaped"
+  },
+  {
+    "id": "R004",
+    "category": "Record Integrity",
+    "description": "Invalid procedure code format",
+    "class": "H",
+    "weight": 100,
+    "carc": "181",
+    "explanation": "Procedure code is neither CPT nor HCPCS shaped"
+  },
+  {
+    "id": "R005",
+    "category": "Record Integrity",
+    "description": "Invalid provider NPI",
+    "class": "H",
+    "weight": 100,
+    "carc": "16",
+    "explanation": "Provider ID fails NPI Luhn check digit"
+  },
+  {
+    "id": "R006",
+    "category": "Record Integrity",
+    "description": "Invalid amount or units",
+    "class": "H",
+    "weight": 100,
+    "carc": "16",
+    "explanation": "Billed amount or units are zero or non-numeric"
+  },
+  {
+    "id": "R007",
+    "category": "Record Integrity",
+    "description": "Date logic error",
+    "class": "H",
+    "weight": 100,
+    "carc": "16",
+    "explanation": "Service from after service to or submit before service from or service from after run date"
+  },
+  {
+    "id": "R010",
+    "category": "Eligibility",
+    "description": "Policy not found",
+    "class": "H",
+    "weight": 100,
+    "carc": "31",
+    "explanation": "Policy number is not on the policy master"
+  },
+  {
+    "id": "R011",
+    "category": "Eligibility",
+    "description": "Member not found",
+    "class": "H",
+    "weight": 100,
+    "carc": "31",
+    "explanation": "Member is not on member master or member policy differs from claim policy"
+  },
+  {
+    "id": "R012",
+    "category": "Eligibility",
+    "description": "Policy inactive",
+    "class": "H",
+    "weight": 100,
+    "carc": "27",
+    "explanation": "Policy status is lapsed, suspended or cancelled"
+  },
+  {
+    "id": "R013",
+    "category": "Eligibility",
+    "description": "Service before effective date",
+    "class": "H",
+    "weight": 100,
+    "carc": "26",
+    "explanation": "Service from is before policy effective date"
+  },
+  {
+    "id": "R014",
+    "category": "Eligibility",
+    "description": "Service after termination",
+    "class": "H",
+    "weight": 100,
+    "carc": "27",
+    "explanation": "Service from is after policy termination date"
+  },
+  {
+    "id": "R015",
+    "category": "Eligibility",
+    "description": "Within waiting period",
+    "class": "M",
+    "weight": 40,
+    "carc": "96",
+    "explanation": "Service from falls inside policy initial waiting period"
+  },
+  {
+    "id": "R016",
+    "category": "Eligibility",
+    "description": "Provider not found or inactive",
+    "class": "H",
+    "weight": 100,
+    "carc": "16",
+    "explanation": "Provider is not on provider master or is marked inactive"
+  },
+  {
+    "id": "R020",
+    "category": "Timeliness",
+    "description": "Filing limit exceeded",
+    "class": "H",
+    "weight": 100,
+    "carc": "29",
+    "explanation": "Submit date exceeds filing limit days after service to"
+  },
+  {
+    "id": "R030",
+    "category": "Benefit and Pricing",
+    "description": "Exceeds remaining sum insured",
+    "class": "C",
+    "weight": 60,
+    "carc": "119",
+    "explanation": "Billed amount exceeds remaining sum insured"
+  },
+  {
+    "id": "R031",
+    "category": "Benefit and Pricing",
+    "description": "Procedure excluded under plan",
+    "class": "H",
+    "weight": 100,
+    "carc": "96",
+    "explanation": "Procedure is excluded under the policy plan code"
+  },
+  {
+    "id": "R032",
+    "category": "Benefit and Pricing",
+    "description": "Pre-authorization missing",
+    "class": "M",
+    "weight": 45,
+    "carc": "197",
+    "explanation": "Procedure requires pre-authorization and no authorization number was supplied"
+  },
+  {
+    "id": "R033",
+    "category": "Benefit and Pricing",
+    "description": "Billed above fee schedule",
+    "class": "M",
+    "weight": 25,
+    "carc": "45",
+    "explanation": "Billed amount per unit exceeds allowed amount by more than 150 percent"
+  },
+  {
+    "id": "R034",
+    "category": "Benefit and Pricing",
+    "description": "High-value claim",
+    "class": "M",
+    "weight": 20,
+    "carc": "-",
+    "explanation": "Billed amount is at or above the high-value threshold"
+  },
+  {
+    "id": "R035",
+    "category": "Benefit and Pricing",
+    "description": "Code not in reference table",
+    "class": "M",
+    "weight": 30,
+    "carc": "16",
+    "explanation": "Diagnosis or procedure code is well formed but absent from reference table"
+  },
+  {
+    "id": "R040",
+    "category": "Clinical Consistency",
+    "description": "Diagnosis procedure mismatch",
+    "class": "M",
+    "weight": 35,
+    "carc": "11",
+    "explanation": "Primary diagnosis category is not in procedure permitted list"
+  },
+  {
+    "id": "R041",
+    "category": "Clinical Consistency",
+    "description": "Age restriction",
+    "class": "M",
+    "weight": 30,
+    "carc": "6",
+    "explanation": "Member age on service date is outside permitted range for procedure or diagnosis"
+  },
+  {
+    "id": "R042",
+    "category": "Clinical Consistency",
+    "description": "Gender restriction",
+    "class": "M",
+    "weight": 40,
+    "carc": "7",
+    "explanation": "Member gender conflicts with procedure or diagnosis gender restriction"
+  },
+  {
+    "id": "R043",
+    "category": "Clinical Consistency",
+    "description": "Place of service invalid",
+    "class": "M",
+    "weight": 30,
+    "carc": "5",
+    "explanation": "Place of service is not in procedure permitted list"
+  },
+  {
+    "id": "R044",
+    "category": "Clinical Consistency",
+    "description": "Units exceed maximum",
+    "class": "M",
+    "weight": 30,
+    "carc": "151",
+    "explanation": "Units exceed procedure maximum units per day"
+  },
+  {
+    "id": "R045",
+    "category": "Clinical Consistency",
+    "description": "Non-billable pair",
+    "class": "M",
+    "weight": 35,
+    "carc": "236",
+    "explanation": "Procedure forms a non-billable pair with another procedure for same member and service date"
+  },
+  {
+    "id": "R050",
+    "category": "Duplicates and Anomalies",
+    "description": "Exact duplicate",
+    "class": "H",
+    "weight": 100,
+    "carc": "18",
+    "explanation": "Same member, provider, service from, procedure and billed amount on history or in this batch"
+  },
+  {
+    "id": "R051",
+    "category": "Duplicates and Anomalies",
+    "description": "Probable duplicate",
+    "class": "C",
+    "weight": 55,
+    "carc": "18",
+    "explanation": "Same member, service from and procedure with different provider or amount"
+  },
+  {
+    "id": "R052",
+    "category": "Duplicates and Anomalies",
+    "description": "High frequency",
+    "class": "M",
+    "weight": 25,
+    "carc": "-",
+    "explanation": "More than 3 history claims for member within frequency window days before service from"
+  },
+  {
+    "id": "R053",
+    "category": "Duplicates and Anomalies",
+    "description": "Provider watch-list or sanctioned",
+    "class": "C",
+    "weight": 70,
+    "carc": "-",
+    "explanation": "Provider status is watch-list or sanctioned"
+  },
+  {
+    "id": "R054",
+    "category": "Duplicates and Anomalies",
+    "description": "Round amount pattern",
+    "class": "W",
+    "weight": 10,
+    "carc": "-",
+    "explanation": "Billed amount is exact multiple of 10000 and at least 50000"
+  }
+]

@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+bin/
+
+# Logs
+*.log
+npm-debug.log*
+logs/
+
+# Environment
+.env
+.env.local
+
+# Database
+*.db
+*.db-journal
+
+# Runtime data
+data/runs/
+data/uploads/
+data/masters/
+data/reference/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# COBOL compiled
+*.exe
+*.o
+*.so
+
+# Test coverage
+coverage/
+
+# Temp
+temp/
+tmp/

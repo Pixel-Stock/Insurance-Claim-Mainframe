@@ -1,0 +1,33 @@
+id,category,description,class,weight,carc,explanation
+R001,Record Integrity,Mandatory field is blank,H,100,16,Claim ID policy number member ID provider ID service dates submit date primary diagnosis procedure code or billed amount is missing
+R002,Record Integrity,Invalid date format,H,100,16,Date is non-numeric or not a valid calendar date
+R003,Record Integrity,Invalid diagnosis code format,H,100,16,Diagnosis code is not ICD-10-CM shaped
+R004,Record Integrity,Invalid procedure code format,H,100,181,Procedure code is neither CPT nor HCPCS shaped
+R005,Record Integrity,Invalid provider NPI,H,100,16,Provider ID fails NPI Luhn check digit
+R006,Record Integrity,Invalid amount or units,H,100,16,Billed amount or units are zero or non-numeric
+R007,Record Integrity,Date logic error,H,100,16,Service from after service to or submit before service from or service from after run date
+R010,Eligibility,Policy not found,H,100,31,Policy number is not on the policy master
+R011,Eligibility,Member not found,H,100,31,Member is not on member master or member policy differs from claim policy
+R012,Eligibility,Policy inactive,H,100,27,Policy status is lapsed suspended or cancelled
+R013,Eligibility,Service before effective date,H,100,26,Service from is before policy effective date
+R014,Eligibility,Service after termination,H,100,27,Service from is after policy termination date
+R015,Eligibility,Within waiting period,M,40,96,Service from falls inside policy initial waiting period
+R016,Eligibility,Provider not found or inactive,H,100,16,Provider is not on provider master or is marked inactive
+R020,Timeliness,Filing limit exceeded,H,100,29,Submit date exceeds filing limit days after service to
+R030,Benefit and Pricing,Exceeds remaining sum insured,C,60,119,Billed amount exceeds remaining sum insured
+R031,Benefit and Pricing,Procedure excluded under plan,H,100,96,Procedure is excluded under the policy plan code
+R032,Benefit and Pricing,Pre-authorization missing,M,45,197,Procedure requires pre-authorization and no authorization number was supplied
+R033,Benefit and Pricing,Billed above fee schedule,M,25,45,Billed amount per unit exceeds allowed amount by more than 150 percent
+R034,Benefit and Pricing,High-value claim,M,20,-,Billed amount is at or above the high-value threshold
+R035,Benefit and Pricing,Code not in reference table,M,30,16,Diagnosis or procedure code is well formed but absent from reference table
+R040,Clinical Consistency,Diagnosis procedure mismatch,M,35,11,Primary diagnosis category is not in procedure permitted list
+R041,Clinical Consistency,Age restriction,M,30,6,Member age on service date is outside permitted range for procedure or diagnosis
+R042,Clinical Consistency,Gender restriction,M,40,7,Member gender conflicts with procedure or diagnosis gender restriction
+R043,Clinical Consistency,Place of service invalid,M,30,5,Place of service is not in procedure permitted list
+R044,Clinical Consistency,Units exceed maximum,M,30,151,Units exceed procedure maximum units per day
+R045,Clinical Consistency,Non-billable pair,M,35,236,Procedure forms a non-billable pair with another procedure for same member and service date
+R050,Duplicates and Anomalies,Exact duplicate,H,100,18,Same member provider service from procedure and billed amount on history or in this batch
+R051,Duplicates and Anomalies,Probable duplicate,C,55,18,Same member service from and procedure with different provider or amount
+R052,Duplicates and Anomalies,High frequency,M,25,-,More than 3 history claims for member within frequency window days before service from
+R053,Duplicates and Anomalies,Provider watch-list or sanctioned,C,70,-,Provider status is watch-list or sanctioned
+R054,Duplicates and Anomalies,Round amount pattern,W,10,-,Billed amount is exact multiple of 10000 and at least 50000

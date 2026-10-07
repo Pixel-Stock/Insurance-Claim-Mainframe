@@ -1,0 +1,135 @@
+{
+  "CLMREC": {
+    "length": 120,
+    "description": "Claim input record",
+    "fields": [
+      { "name": "REC_TYPE", "start": 1, "length": 1, "picture": "X", "description": "D=detail, T=trailer" },
+      { "name": "CLM_ID", "start": 2, "length": 12, "picture": "X(12)", "description": "Unique claim identifier" },
+      { "name": "POLICY_NO", "start": 14, "length": 10, "picture": "X(10)", "description": "Policy number" },
+      { "name": "MEMBER_ID", "start": 24, "length": 12, "picture": "X(12)", "description": "Member identifier" },
+      { "name": "PROVIDER_ID", "start": 36, "length": 10, "picture": "X(10)", "description": "Provider NPI" },
+      { "name": "DOS_FROM", "start": 46, "length": 8, "picture": "9(8)", "description": "Service date from YYYYMMDD" },
+      { "name": "DOS_TO", "start": 54, "length": 8, "picture": "9(8)", "description": "Service date to YYYYMMDD" },
+      { "name": "SUBMIT_DATE", "start": 62, "length": 8, "picture": "9(8)", "description": "Submission date YYYYMMDD" },
+      { "name": "POS_CODE", "start": 70, "length": 2, "picture": "X(2)", "description": "Place of service" },
+      { "name": "DX_PRIMARY", "start": 72, "length": 7, "picture": "X(7)", "description": "Primary diagnosis ICD-10" },
+      { "name": "DX_SECONDARY", "start": 79, "length": 7, "picture": "X(7)", "description": "Secondary diagnosis" },
+      { "name": "PROC_CODE", "start": 86, "length": 5, "picture": "X(5)", "description": "Procedure CPT/HCPCS" },
+      { "name": "PROC_MOD", "start": 91, "length": 2, "picture": "X(2)", "description": "Procedure modifier" },
+      { "name": "UNITS", "start": 93, "length": 3, "picture": "9(3)", "description": "Units" },
+      { "name": "BILLED_AMT", "start": 96, "length": 9, "picture": "9(7)V99", "description": "Billed amount implied decimal" },
+      { "name": "AUTH_NO", "start": 105, "length": 10, "picture": "X(10)", "description": "Authorization number" },
+      { "name": "FILLER", "start": 115, "length": 6, "picture": "X(6)", "description": "Reserved" }
+    ]
+  },
+  "TRLREC": {
+    "length": 120,
+    "description": "Trailer record",
+    "fields": [
+      { "name": "REC_TYPE", "start": 1, "length": 1, "picture": "X", "description": "T" },
+      { "name": "TRL_COUNT", "start": 2, "length": 9, "picture": "9(9)", "description": "Total detail records" },
+      { "name": "TRL_AMOUNT", "start": 11, "length": 13, "picture": "9(11)V99", "description": "Total billed amount" },
+      { "name": "FILLER", "start": 24, "length": 97, "picture": "X(97)", "description": "Reserved" }
+    ]
+  },
+  "POLREC": {
+    "length": 60,
+    "description": "Policy master record",
+    "fields": [
+      { "name": "POLICY_NO", "start": 1, "length": 10, "picture": "X(10)", "description": "Key" },
+      { "name": "PLAN_CODE", "start": 11, "length": 4, "picture": "X(4)", "description": "Plan type" },
+      { "name": "POL_STATUS", "start": 15, "length": 1, "picture": "X", "description": "A/L/S/C" },
+      { "name": "EFF_DATE", "start": 16, "length": 8, "picture": "9(8)", "description": "Effective date" },
+      { "name": "TERM_DATE", "start": 24, "length": 8, "picture": "9(8)", "description": "Termination date" },
+      { "name": "WAIT_DAYS", "start": 32, "length": 3, "picture": "9(3)", "description": "Waiting period" },
+      { "name": "SUM_INSURED", "start": 35, "length": 6, "picture": "S9(9)V99", "description": "Total coverage packed" },
+      { "name": "UTILISED_AMT", "start": 41, "length": 6, "picture": "S9(9)V99", "description": "Amount used packed" },
+      { "name": "FILLER", "start": 47, "length": 14, "picture": "X(14)", "description": "Reserved" }
+    ]
+  },
+  "MEMREC": {
+    "length": 60,
+    "description": "Member master record",
+    "fields": [
+      { "name": "MEMBER_ID", "start": 1, "length": 12, "picture": "X(12)", "description": "Key" },
+      { "name": "POLICY_NO", "start": 13, "length": 10, "picture": "X(10)", "description": "Link to policy" },
+      { "name": "DOB", "start": 23, "length": 8, "picture": "9(8)", "description": "Date of birth" },
+      { "name": "GENDER", "start": 31, "length": 1, "picture": "X", "description": "M/F" },
+      { "name": "RELATION", "start": 32, "length": 2, "picture": "X(2)", "description": "SE/SP/CH/PA" },
+      { "name": "MEM_STATUS", "start": 34, "length": 1, "picture": "X", "description": "A/I" },
+      { "name": "FILLER", "start": 35, "length": 26, "picture": "X(26)", "description": "Reserved" }
+    ]
+  },
+  "PRVREC": {
+    "length": 60,
+    "description": "Provider master record",
+    "fields": [
+      { "name": "PROVIDER_ID", "start": 1, "length": 10, "picture": "X(10)", "description": "Key NPI" },
+      { "name": "PROV_STATUS", "start": 11, "length": 1, "picture": "X", "description": "A/I/W/S" },
+      { "name": "PROV_TYPE", "start": 12, "length": 2, "picture": "X(2)", "description": "Type code" },
+      { "name": "NETWORK_FLAG", "start": 14, "length": 1, "picture": "X", "description": "Y/N" },
+      { "name": "PROV_NAME", "start": 15, "length": 30, "picture": "X(30)", "description": "Provider name" },
+      { "name": "FILLER", "start": 45, "length": 16, "picture": "X(16)", "description": "Reserved" }
+    ]
+  },
+  "HSTREC": {
+    "length": 80,
+    "description": "Claim history record",
+    "fields": [
+      { "name": "MEMBER_ID", "start": 1, "length": 12, "picture": "X(12)", "description": "Key part 1" },
+      { "name": "DOS_FROM", "start": 13, "length": 8, "picture": "9(8)", "description": "Key part 2" },
+      { "name": "PROC_CODE", "start": 21, "length": 5, "picture": "X(5)", "description": "Key part 3" },
+      { "name": "PROVIDER_ID", "start": 26, "length": 10, "picture": "X(10)", "description": "Key part 4" },
+      { "name": "CLM_ID", "start": 36, "length": 12, "picture": "X(12)", "description": "Claim reference" },
+      { "name": "BILLED_AMT", "start": 48, "length": 9, "picture": "9(7)V99", "description": "Billed amount" },
+      { "name": "DISP", "start": 57, "length": 1, "picture": "X", "description": "Disposition" },
+      { "name": "RUN_DATE", "start": 58, "length": 8, "picture": "9(8)", "description": "Run date" },
+      { "name": "FILLER", "start": 66, "length": 15, "picture": "X(15)", "description": "Reserved" }
+    ]
+  },
+  "EXCREC": {
+    "length": 100,
+    "description": "Exception output record",
+    "fields": [
+      { "name": "CLM_ID", "start": 1, "length": 12, "picture": "X(12)", "description": "Claim ID" },
+      { "name": "MEMBER_ID", "start": 13, "length": 12, "picture": "X(12)", "description": "Member" },
+      { "name": "POLICY_NO", "start": 25, "length": 10, "picture": "X(10)", "description": "Policy" },
+      { "name": "PROVIDER_ID", "start": 35, "length": 10, "picture": "X(10)", "description": "Provider" },
+      { "name": "DOS_FROM", "start": 45, "length": 8, "picture": "9(8)", "description": "Service date" },
+      { "name": "BILLED_AMT", "start": 53, "length": 9, "picture": "9(7)V99", "description": "Billed amount" },
+      { "name": "SCORE", "start": 62, "length": 3, "picture": "9(3)", "description": "Risk score" },
+      { "name": "DISP", "start": 65, "length": 1, "picture": "X", "description": "P/M/C/X" },
+      { "name": "SEV", "start": 66, "length": 1, "picture": "9", "description": "1-4" },
+      { "name": "HIT_COUNT", "start": 67, "length": 2, "picture": "9(2)", "description": "Rule count" },
+      { "name": "TOP_RULE", "start": 69, "length": 4, "picture": "X(4)", "description": "Highest rule" },
+      { "name": "RUN_ID", "start": 73, "length": 14, "picture": "X(14)", "description": "Run identifier" },
+      { "name": "FILLER", "start": 87, "length": 14, "picture": "X(14)", "description": "Reserved" }
+    ]
+  },
+  "HITREC": {
+    "length": 100,
+    "description": "Rule hit record",
+    "fields": [
+      { "name": "CLM_ID", "start": 1, "length": 12, "picture": "X(12)", "description": "Claim ID" },
+      { "name": "RULE_ID", "start": 13, "length": 4, "picture": "X(4)", "description": "Rule identifier" },
+      { "name": "CLASS", "start": 17, "length": 1, "picture": "X", "description": "H/C/M/W" },
+      { "name": "WEIGHT", "start": 18, "length": 3, "picture": "9(3)", "description": "Score weight" },
+      { "name": "CARC", "start": 21, "length": 3, "picture": "X(3)", "description": "Reason code" },
+      { "name": "EVIDENCE", "start": 24, "length": 60, "picture": "X(60)", "description": "Evidence text" },
+      { "name": "RUN_ID", "start": 84, "length": 14, "picture": "X(14)", "description": "Run identifier" },
+      { "name": "FILLER", "start": 98, "length": 3, "picture": "X(3)", "description": "Reserved" }
+    ]
+  },
+  "CTLREC": {
+    "length": 80,
+    "description": "Control total record",
+    "fields": [
+      { "name": "CTL_TYPE", "start": 1, "length": 2, "picture": "X(2)", "description": "RD/TR/DS/RL/PM" },
+      { "name": "CTL_KEY", "start": 3, "length": 4, "picture": "X(4)", "description": "Disposition or rule" },
+      { "name": "CTL_COUNT", "start": 7, "length": 9, "picture": "9(9)", "description": "Count" },
+      { "name": "CTL_AMOUNT", "start": 16, "length": 13, "picture": "9(11)V99", "description": "Amount" },
+      { "name": "RUN_ID", "start": 29, "length": 14, "picture": "X(14)", "description": "Run identifier" },
+      { "name": "FILLER", "start": 43, "length": 38, "picture": "X(38)", "description": "Reserved or param text" }
+    ]
+  }
+}
